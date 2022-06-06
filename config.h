@@ -77,6 +77,8 @@ static Key keys[] = {
 	{ MODKEY,			                  XK_r,              spawn,		       SHCMD("$TERMINAL -e ranger") },
 	{ MODKEY,                       XK_b,              spawn,          SHCMD("feh --bg-fill --randomize ~/.wallpapers/*") },
   { MODKEY,                       XK_semicolon,      spawn,		       SHCMD("skippy-xd") },
+	{ MODKEY,			                  XK_y,              spawn,		       SHCMD("flameshot gui -p ~/Pictures/screenshots") },
+	{ MODKEY|ShiftMask,             XK_y,              spawn,          SHCMD("flameshot full -p ~/Pictures/screenshots") },
 	{ MODKEY|ShiftMask,             XK_b,              togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_j,              rotatestack,    {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,              rotatestack,    {.i = -1 } },
