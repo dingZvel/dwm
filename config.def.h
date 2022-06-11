@@ -73,12 +73,12 @@ static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,			                  XK_w,              spawn,		       SHCMD("$BROWSER") },
-	{ MODKEY,			                  XK_r,              spawn,		       SHCMD("$TERMINAL -e ranger") },
+	{ MODKEY,                       XK_w,              spawn,          SHCMD("$BROWSER") },
+	{ MODKEY,                       XK_r,              spawn,          SHCMD("$TERMINAL -e ranger") },
 	{ MODKEY,                       XK_b,              spawn,          SHCMD("feh --bg-fill --randomize ~/.wallpapers/*") },
-  { MODKEY,                       XK_semicolon,      spawn,		       SHCMD("skippy-xd") },
 	{ MODKEY,			                  XK_y,              spawn,		       SHCMD("flameshot gui -p ~/Pictures/screenshots") },
 	{ MODKEY|ShiftMask,             XK_y,              spawn,          SHCMD("flameshot full -p ~/Pictures/screenshots") },
+	{ MODKEY,                       XK_semicolon,      spawn,          SHCMD("skippy-xd") },
 	{ MODKEY,                       XK_p,              spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return,         spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,          togglescratch,  {.v = scratchpadcmd } },
